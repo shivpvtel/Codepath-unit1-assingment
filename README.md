@@ -21,4 +21,4 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### Notes
 Describe any challenges encountered while building the app.
-Nothing worth mentioning, just basic debugging problems.
+Nothing worth mentioning, just basic debugging problems. i was not able to run the app on my device tho, i have the 13 pro max but nothing came up on my screen when trying to run it.
