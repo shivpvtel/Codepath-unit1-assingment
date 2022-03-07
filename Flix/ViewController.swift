@@ -68,11 +68,30 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let posterPath = movie["poster_path"] as! String
             let posterUrl = URL(string: baseUrl + posterPath)
             
-            cell.posterView.af_setImage(withURL: posterUrl!)
+            cell.posterView.af.setImage(withURL: posterUrl!)
             
             
             
         return cell
     }
 
+
+override func prepare(for segue: UIStoryboardSegue,sender: Any?){
+    print("loading up in the details screen")
+    //find selected movie
+   let cell = sender as! UITableViewCell
+    let indexPath = tableView.indexPath(for: cell)!
+    let movie = movies[indexPath.row]
+    
+    //pass the selected movie to the detail veiw controller
+    let detailsiewcontroller = segue.destination as! Moviedetailsiewcontroller
+    detailsiewcontroller.movie = movie
+    
+    //highlighted selection
+  tableView.deselectRow(at: indexPath, animated: true)
+    
+    
+    
+}
+    
 }
