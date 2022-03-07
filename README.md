@@ -38,7 +38,7 @@ Nothing worth mentioning, just basic debugging problems. i was not able to run t
 ### App Walkthrough GIF
 
 
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="Kapture 2022-03-07 at 01.32.08.gif" width=250><br>
 
 ### Notes
-Describe any challenges encountered while building the app.
+View collection grid took me forever to figure out
